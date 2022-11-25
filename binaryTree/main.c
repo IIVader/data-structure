@@ -51,8 +51,17 @@ void inserir(ArvB *arv, int valor){
     }
 }
 
-int main()
-{
+void imprimir(No *raiz){
+    if(raiz != NULL){
+        imprimir(raiz->esquerda);
+        printf("%d ", raiz->info);
+        imprimir(raiz->direita);
+    };
+}
+
+int main(){
+
+    
 
     return 0;
 }
